@@ -1,6 +1,5 @@
 [tools]
 jq = "latest"
-rust = "latest"
 yq = "latest"
 bat = "latest"
 ripgrep = "latest"
@@ -15,3 +14,6 @@ zoxide = "latest"
 kubie = "latest"
 usage = "latest"
 "github:Schniz/fnm" = "latest"
+crane = "latest"
+kubelogin = "latest"
+kubeswitch = "latest"

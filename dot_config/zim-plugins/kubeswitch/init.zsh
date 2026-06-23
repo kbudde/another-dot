@@ -1,9 +1,7 @@
 typeset -A cfg
 
 cfg=(
-    ["talosctl"]="mise exec talosctl -- talosctl completion zsh"
-    #["max_logs"]="5"
-    #["env"]="production"
+    ["switcher"]="mise exec kubeswitch -- switcher init zsh"
 )
 
 
@@ -20,5 +18,11 @@ for key value in ${(kv)cfg}; do
             eval $gen_command >| $compfile
             print -u2 -PR "* Detected a new version '$command'. Regenerated completions."
         fi
+        compdef(){}
+        source $compfile
+        unset compdef
+
     }  ${0:h} "$key" "$value"
 done
+
+alias cx=switch

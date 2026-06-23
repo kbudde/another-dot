@@ -25,9 +25,10 @@ zmodule joke/zim-kubectl
 zmodule joke/zim-starship
 zmodule joke/zim-yq
 zmodule antoineco/zim-zoxide
-zmodule $HOME/.config/zim-plugins/kubie
 zmodule $HOME/.config/zim-plugins/fnm
-zmodule $HOME/.config/zim-plugins/mycomp
+zmodule $HOME/.config/zim-plugins/kubeswitch
+zmodule $HOME/.config/zim-plugins/kubie
+zmodule $HOME/.config/zim-plugins/talosctl
 zmodule fzf
 zmodule magic-enter
 zmodule shanwker1223/zim-alias-finder
