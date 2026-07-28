@@ -25,6 +25,7 @@ git-cliff = "latest"
 argocd = "latest"
 just = "latest"
 "github:ankitpokhrel/jira-cli" = "latest"
+"github:kubara-io/kubara" = "latest"
 
 [settings]
 lockfile = true
