@@ -19,3 +19,12 @@ kubelogin = "latest"
 kubeswitch = "latest"
 lima = "latest"
 "github:cachix/secretspec" = "latest"
+"github:stackitcloud/stackit-cli" = "latest"
+opentofu = "latest"
+git-cliff = "latest"
+argocd = "latest"
+just = "latest"
+"github:ankitpokhrel/jira-cli" = "latest"
+
+[settings]
+lockfile = true
