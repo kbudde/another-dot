@@ -26,6 +26,8 @@ just = "latest"
 "github:ankitpokhrel/jira-cli" = "latest"
 "github:kubara-io/kubara" = "latest"
 "github:mykso/myks" = "latest"
+direnv = "latest"
+helm = "latest"
 
 [settings]
 lockfile = true
