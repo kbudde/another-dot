@@ -1,0 +1,3 @@
+
+
+fpath=("$zmodule" $fpath)

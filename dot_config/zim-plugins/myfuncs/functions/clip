@@ -1,0 +1,12 @@
+local usage="usage: $0 TEXT"
+local text="$*"
+if [[ ! -t 0 ]]
+then
+        text=$(cat)
+fi
+if [[ -z "$text" && $# -eq 0 ]]
+then
+        echo "$usage" >&2
+        return 2
+fi
+echo -e "\033]52;c;$(echo -n "$text" | base64 -w 0 )\a"

@@ -28,6 +28,8 @@ zmodule $HOME/.config/zim-plugins/fnm
 zmodule $HOME/.config/zim-plugins/kubeswitch
 zmodule $HOME/.config/zim-plugins/allCompletions
 zmodule $HOME/.config/zim-plugins/sourcing
+zmodule $HOME/.config/zim-plugins/myfuncs
+zmodule $HOME/.config/zim-plugins/aliases
 zmodule fzf
 zmodule magic-enter
 zmodule shanwker1223/zim-alias-finder

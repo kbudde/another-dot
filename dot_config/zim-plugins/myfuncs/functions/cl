@@ -1,0 +1,11 @@
+# copy the last command to the clipboard
+# optionally, you can pass a number to copy the nth last command
+# e.g. cl 2 will copy the second last command
+# the second argument is the number of lines to copy
+# e.g. cl 3 2 will copy the 3rd and 2nd last commands
+local lines=${1:-1}
+local count=${2:-1}
+local command
+command=$(fc -l -"$lines" | head -n "$count" | sed 's|^ \+[0-9]\+ \+||')
+echo "$command" | clip
+echo "Copied command to clipboard: $command"
