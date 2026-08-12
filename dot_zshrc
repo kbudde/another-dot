@@ -112,16 +112,6 @@ eval "$(starship init zsh)"
 
 zstyle ':zim:plugins:alias-finder' autoload yes
 
+[[ -d "$HOME/.opencode/bin" ]] && export PATH="$HOME/.opencode/bin:$PATH"
+[[ -d "$HOME/.lmstudio/bin" ]] && export PATH="$HOME/.lmstudio/bin:$PATH"
 
-# export PATH=/home/kbudde/.opencode/bin:$PATH
-
-# # fnm
-# FNM_PATH="/home/kbudde/.local/share/fnm"
-# if [ -d "$FNM_PATH" ]; then
-#   export PATH="$FNM_PATH:$PATH"
-#   eval "$(fnm env --shell zsh)"
-# fi
-
-# # Added by LM Studio CLI (lms)
-# export PATH="$PATH:/home/kbudde/.lmstudio/bin"
-# # End of LM Studio CLI section
