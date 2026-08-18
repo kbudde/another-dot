@@ -1,3 +1,5 @@
+
+# Git
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
 alias gc='git checkout'
 alias ga='git add'
@@ -31,3 +33,19 @@ gcb(){
 #         git push -o merge_request.create -o merge_request.target="$1"
 #     fi
 # }
+
+
+# Global
+
+globalias() {
+  if [[ $LBUFFER =~ '[a-zA-Z0-9]+$' ]]; then
+    zle _expand_alias
+    zle expand-word
+  fi
+  zle self-insert
+}
+zle -N globalias
+bindkey " " globalias 
+
+alias -g Y='-o yaml'
+alias -g YY='-o yaml| bat -l yaml'
