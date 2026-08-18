@@ -28,6 +28,8 @@ just = "latest"
 "github:mykso/myks" = "latest"
 direnv = "latest"
 helm = "latest"
+terragrunt = "latest"
+popeye = "latest"
 
 [settings]
 lockfile = true
