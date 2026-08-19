@@ -33,3 +33,6 @@ cx() {
 		) \
 		&& switch set-context "$cl"
   }
+
+# use last by default
+switch set-last-context > /dev/null 2>&1

@@ -49,3 +49,9 @@ bindkey " " globalias
 
 alias -g Y='-o yaml'
 alias -g YY='-o yaml| bat -l yaml'
+
+
+# tools
+
+alias kkk="k9s"
+alias kk="k9s --readonly"
