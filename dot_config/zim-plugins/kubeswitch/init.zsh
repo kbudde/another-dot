@@ -25,4 +25,11 @@ for key value in ${(kv)cfg}; do
     }  ${0:h} "$key" "$value"
 done
 
-alias cx=switch
+cx() {
+    local cl
+    cl=$(switch list-contexts | \
+		grep -v ".kube/admin" | \
+		fzf --height=80%  --info=inline --border --margin=1 --padding=1 -q "$1" -1\
+		) \
+		&& switch set-context "$cl"
+  }
