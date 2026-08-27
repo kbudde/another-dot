@@ -110,8 +110,23 @@ source ${ZIM_HOME}/init.zsh
 
 eval "$(starship init zsh)"
 
-zstyle ':zim:plugins:alias-finder' autoload yes
+#zstyle ':zim:plugins:alias-finder' autoload yes
 
 [[ -d "$HOME/.opencode/bin" ]] && export PATH="$HOME/.opencode/bin:$PATH"
 [[ -d "$HOME/.lmstudio/bin" ]] && export PATH="$HOME/.lmstudio/bin:$PATH"
 
+export SBX_NO_TELEMETRY=1
+
+source <(direnv hook zsh)
+
+alias restish="noglob restish"
+# >>> restish completion >>>
+# Managed by `restish completion install zsh`.
+autoload -Uz compinit
+if ! whence -w compdef >/dev/null 2>&1; then
+  compinit
+fi
+if [ -r '/home/budde/.config/restish/completions/_restish.zsh' ]; then
+  source '/home/budde/.config/restish/completions/_restish.zsh'
+fi
+# <<< restish completion <<<

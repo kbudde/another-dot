@@ -30,6 +30,7 @@ direnv = "latest"
 helm = "latest"
 terragrunt = "latest"
 popeye = "latest"
+restish = "latest"
 
 [settings]
 lockfile = true
