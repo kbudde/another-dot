@@ -117,6 +117,7 @@ eval "$(starship init zsh)"
 
 export SBX_NO_TELEMETRY=1
 
+export DIRENV_LOG_FORMAT=
 source <(direnv hook zsh)
 
 alias restish="noglob restish"
@@ -130,3 +131,4 @@ if [ -r '/home/budde/.config/restish/completions/_restish.zsh' ]; then
   source '/home/budde/.config/restish/completions/_restish.zsh'
 fi
 # <<< restish completion <<<
+   
